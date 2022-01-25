@@ -2,4 +2,8 @@ fastapi==0.65.1
 uvicorn==0.13.4
 tensorflow==2.5.2
 requests==2.22.0
-scikit-image
+scikit-image==0.18.1
+opencv-python==4.2.0.34
+numpy==1.19.2
+Pillow==7.0.0
+pydantic==1.8.2
