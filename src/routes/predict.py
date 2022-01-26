@@ -7,7 +7,6 @@ import io
 from src.utils import reshape_image
 
 
-
 def handler(model, content):
 
     cp = CatPrediction(model)
@@ -16,7 +15,6 @@ def handler(model, content):
     output = cp.predict(img)
 
     return output
-
 
 
 class CatPrediction:
@@ -61,18 +59,3 @@ class CatPrediction:
         result = self.model.predict(img)
 
         return self.prepare_output(result)
-
-
-
-# image_path = "notcat1.jpeg"
-# image = cv2.imread(image_path)
-
-# test_image = np.expand_dims(reshape_image(image), axis = 0)
-                        
-# result = model.predict(test_image)
-# plt.imshow(image)
-
-# if result[0][0] > result[0][1]:
-#     print("It is a cat.\nConfidence:",round(result[0][0]*100, 2), "%")
-# else:
-#     print("It is a Dog.\nConfidence:",round(result[0][1]*100, 2), "%")
