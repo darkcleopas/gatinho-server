@@ -6,22 +6,13 @@ Clone the project
 
 ```sh
 git clone https://github.com/DarkCleopas/gatinho.git
-```
 
-Install the dependencies and run the server
-
-```sh
 cd gatinho/
-pip install -r requirements.txt
- 
-python gatinho_server.py
 ```
 
-Run the tests
-```sh
-python -m pytest tests/test_iris.py
-```
-## Docker
+There are two ways to set up this project locally
+
+## Using Docker
 
 Creating a Docker container for Gatinho server
 
@@ -34,6 +25,27 @@ Run the gatinho/server container
 ```sh
 sudo docker run -d --name gatinho-server --network host gatinho/server
 ```
+
+Run the tests
+```sh
+python -m pytest tests/test_iris.py
+```
+
+## Directly in the terminal
+
+Install the dependencies and run the server
+
+```sh
+pip install -r requirements.txt
+ 
+python gatinho_server.py
+```
+
+Run the tests
+```sh
+python -m pytest tests/test_iris.py
+```
+
 
 # Usage
 
