@@ -1,6 +1,42 @@
-# gatinho
+<p align="center">
 
-# Installation
+  <h3 align="center">Gatinho!</h3>
+
+<p align="center">
+  <img src="https://img.shields.io/static/v1?label=Lincense&message=MIT&color=0000ff " alt="License" />
+</p>
+
+<p align="center">
+    This site was created to obtain parcial grade in Distributed Systems subject
+    <br />
+    <br />
+    <a href="README.md">🇺🇸English</a>
+    ·
+    <a href="README-pt.md">🇧🇷Portuguese</a>
+  </p>
+</p>
+
+<!-- TABLE OF CONTENTS -->
+## 🗂 Table of Contents
+
+* [About the Project](#book-about-the-project)
+* [Installation](#bricks-installation)
+  * [Prerequisites](#construction-prerequisites)
+  * [Front-end](#lipstick-front-end)
+    * [Installing Dependencies](#construction-installing-dependencies)
+    * [Running Project](#arrow_forward-running-project)
+* [License](#page_facing_up-license)
+* [Authors](#woman_technologist-man_technologist-authors)
+
+## :book: About The Project
+
+The project is to use image processing with Python ([repository is here](https://github.com/DarkCleopas/gatinho)), where you can send a image to check if it is a cat or not.
+
+## :bricks: Installation
+
+This project uses [Python](https://www.python.org/) and [Docker](https://www.docker.com/), you will need them to build its dependencies.
+
+### :construction: Prerequisites
 
 Clone the project
 
@@ -8,7 +44,12 @@ Clone the project
 git clone https://github.com/DarkCleopas/gatinho.git
 
 cd gatinho/
+
 ```
+
+🚨 If you don't have git in your machine, you can install it [here](https://git-scm.com/downloads).
+
+### :arrow_forward: Running Project
 
 There are two ways to set up this project locally
 
@@ -72,3 +113,17 @@ You can use [this site](https://base64.guru/converter/encode/image) to get the b
     "is_cat": true
 }
 ```
+
+## :page_facing_up: License
+
+This project uses [MIT](https://github.com/3salles/guess-kitty/blob/main/LICENSE) license.
+
+## :woman_technologist: :man_technologist: Authors
+
+[Beatriz Salles](https://github.com/3salles)
+<br/>
+[Lucas Cléopas](https://github.com/DarkCleopas)
+
+
+
+<p align="center">Developed with 💜</p>
