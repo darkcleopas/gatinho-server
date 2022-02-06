@@ -38,11 +38,20 @@ class CatPrediction:
     def prepare_output(self, result):
 
         if result[0][0] > result[0][1]:
+
+            if result[0][0] > 0.60:
             
-            output = {
-                "result": float(result[0][0]),
-                "is_cat": True
-            }
+                output = {
+                    "score": float(result[0][0]),
+                    "is_cat": True
+                }
+
+            else:
+
+                output = {
+                    "score": float(result[0][0]),
+                    "is_cat": False
+                }
 
         else:
             
@@ -50,6 +59,7 @@ class CatPrediction:
                 "score": float(result[0][1]),
                 "is_cat": False
             }
+        
 
         return output
 
