@@ -18,7 +18,7 @@ app = FastAPI()
 @app.post('/predict')
 def predict(content: CatPrediction):
 
-    img_b64 = content.image
+    img_b64 = content.image.split(",")[-1]
 
     result = cat_predict.handler(model, img_b64)
 
